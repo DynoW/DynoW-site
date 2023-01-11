@@ -425,6 +425,9 @@ a {
 a:hover {
 	color: #111;
 }
+a:focus {
+	color: #004a59;
+}
 
 
 /* =Logo and Navigation
