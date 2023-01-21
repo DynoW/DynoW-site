@@ -25,35 +25,72 @@
         <link rel="icon" type="image/png" sizes="180x180" href="assets/img/Dyno3.png">
         <link rel="icon" type="image/png" sizes="192x192" href="assets/img/Dyno4.png">
         <link rel="icon" type="image/png" sizes="512x512" href="assets/img/Dyno5.png">
-        <style>
-            body { background: url('assets/img/bg-pattern.png'), linear-gradient(to left, #212735, #337fd5 ) ; text-align: center; padding-top: 150px; padding-left: 6rem; padding-right: 6rem; font: 20px Helvetica, sans-serif; color: #fff; }
-            #container { display: flex; flex-direction: row;  justify-content: center; align-content: center; }
-            #translucent { padding: 3rem; background-color: rgb(40,73,116,0.2); border-radius: 15px; }
-            h1 { font-size: 50px; }
-            article { display: block; text-align: left; max-width: 650px; margin: 0 auto; }
-            a { color: #f76300; text-decoration: none; }
-            a:hover { text-decoration: underline; }
-            @media (max-width: 768px){
-                body{ padding-top: 50px; padding-left: 1rem; padding-right: 1rem; }
-                #container { flex-direction: column; font-size: 2px; padding-top: 250px; padding-bottom: 150px}
-                #translucent { padding: 2px; padding-top: 40px; border-radius: 10px; }
-                h1 { font-size: 35px; }
-                h2 { font-size: 25px;}
+        <title>Alege site-ul pe care vrei sa ajungi:</title>
+        <style type="text/css">
+            body {
+                background: url('assets/img/bg-pattern.png'), linear-gradient(to left, #212735, #337fd5 ) ; text-align: center; padding-top: 150px; padding-left: 6rem; padding-right: 6rem; font: 20px Helvetica, sans-serif; color: #fff; 
+            }
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            }
+            header {
+                background-color: #2196F3; /* Blue */
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            section {
+                padding: 20px;
+            }
+            .options {
+                display: flex;
+                justify-content: center;
+            }
+                .site-button {
+                padding: 20px 30px;
+                margin: 10px;
+                border: none;
+                border-radius: 5px;
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 1px;
+                cursor: pointer;
+            }
+            .site-a {
+                background-color: #fff; /* White */
+                color: #2196F3; /* Blue */
+                border: 2px solid #2196F3;
+            }
+            .site-b {
+                background-color: #fff; /* White */
+                color: #2196F3; /* Blue */
+                border: 2px solid #2196F3;
+            }
+            .site-button:hover {
+                background-color: #2196F3; /* Blue */
+                color: #fff;
             }
         </style>
     </head>
+
     <body>
-        <div id="translucent">
-            <h1>Alege unde vrei să ajungi:</h1>
-            <div id="container">
-                <article>
-                    <h2>Site <a href="/bot/">DynoW BOT</a></h2>
-                </article>
-                <article>
-                    <h2>Site <a href="https://dynoshop.tk/mate-fizica/">mate-fizica</a></h2>
-                </article>
-            </div>
+        <div class="container">
+            <header>
+                <h1>Please choose a site to visit:</h1>
+            </header>
+            <section>
+                <div class="options">
+                    <button class="site-button site-a" onclick="location.href='http://www.sitea.com';">DynoW BOT</button>
+                    <button class="site-button site-b" onclick="location.href='http://www.siteb.com';">mate-fizica</button>
+                </div>
+            </section>
         </div>
     </body>
 </html>
-
